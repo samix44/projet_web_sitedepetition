@@ -1,0 +1,269 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*HEADER*/
+
+header nav img{
+    margin:12px;
+    width: 50px;
+    height: 50px;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #F8F9FA;
+}
+
+header nav .left-nav{
+    display: flex;
+}
+
+header nav .left-nav ul{
+    display: flex;
+}
+
+header nav .left-nav ul li{
+    list-style: none;
+    position: relative;
+}
+
+header nav .left-nav ul li .sbtn{
+    text-decoration: none;
+    color: black;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+header nav .left-nav ul li::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #f44336;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -9px;
+    transition: all 0.8s ease;
+}
+
+header nav .left-nav ul li:hover::before{
+    width: 90%;
+}
+
+header nav .right-nav {
+    display: flex;
+}
+
+header nav .right-nav img{
+    border-radius: 50px;
+}
+
+header nav .right-nav ul{
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    right: 20px;
+}
+
+header nav .right-nav ul li{
+    list-style: none;
+}
+
+header nav .right-nav ul li:nth-child(1){
+    font-weight: 600;
+    color: #f44336;
+}
+
+header nav .bi-list{
+    display: none;
+    font-size: 40px;
+    position: relative;
+    top: 15%;
+}
+
+
+.hide{
+    position: absolute;
+    display: none;
+    visibility:hidden;
+}
+
+
+/*CREER UNE PETITION*/
+
+#creer{
+    margin: 80px;
+}
+
+#creer .center{
+    margin: 0 200px;
+    padding: 70px;
+    box-shadow: 0px 0px 7px #aaaaaa;
+}
+
+#creer .center h3{
+    text-align: center;
+    color: #f44336;
+    font-weight: 600;
+}
+
+#creer .center form .txt{
+    margin: 20px 0;
+}
+
+.btnn{
+    padding: 5px 10px;
+    color: white;
+    background-color: #f44336;
+    border-radius: 20px;
+    border: 1px solid #f44336;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: #212529;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;   
+}
+
+footer ul li{
+    margin-left: 30px;
+    margin-top: 18px;
+}
+
+footer ul li:nth-child(1){
+    margin-left: 0px;
+}
+
+footer ul li:nth-child(4){
+    margin-right: 30px;
+}
+
+footer ul li i{
+    font-size: 20px;
+    color: white;
+}
+
+footer ul li i:hover{
+    color: #f44336;
+}
+
+footer p{
+    margin-top: -8px;
+    font-size: 16px;
+    color: #f44336;
+    text-align: center;
+}
+
+.success{
+    text-align: center;
+    background-color: rgb(27, 180, 27);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.Dec{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #f44336;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #f44336;
+}
+
+.Dec:hover{
+    color: #f44336;
+    background-color: transparent;
+}
+
+
+
+@media screen and (max-width : 600px) {
+    
+    /*HEADER*/
+
+    header nav .bi-list{
+        display: block;
+    }
+
+    header nav .left-nav ul{
+        width: 100%;
+        text-align: center;
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        top: 80px;
+        left: 0;
+        z-index: 3;
+        background-color: #F8F9FA;
+        transition: 1s;
+    }
+
+    header nav .left-nav ul li{
+        position: relative;
+        left: -5%;
+    }
+
+    header nav{
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    header nav ul li::before{
+        display: none;
+    }
+
+    .Dec{
+        margin-bottom: 20px;
+        margin-right: -5px;
+        margin-left: -5px;
+        padding: 6px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    /*CREER UNE PETITION*/
+
+    #creer{
+        margin: 60px;
+    }
+
+    #creer .center{
+        margin: 0px 0px;
+        padding: 10px;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        width: 100%;
+        height: 110px;
+        background-color: #212529;
+    }
+}
